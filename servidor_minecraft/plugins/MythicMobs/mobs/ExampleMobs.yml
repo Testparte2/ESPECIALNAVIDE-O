@@ -1,0 +1,20 @@
+SLIME:
+  Type: slime
+  Health: 20
+  damage: 20
+GHAST:
+  Type: Ghast
+  Health: 20
+  damage: 30
+VINDICATOR:
+  type: vindicator
+  health: 40
+  damage: 40
+ZOMBIE:
+  type: zombie
+  health: 40
+  damage: 50
+RAVAGER:
+  type: Raveger
+  health: 100
+  damage: 50

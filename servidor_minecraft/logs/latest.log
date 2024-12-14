@@ -1,30 +1,482 @@
-[17:49:45] [ServerMain/INFO]: Building unoptimized datafixer
-[17:49:48] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[17:49:48] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
-[17:49:52] [ServerMain/INFO]: Loaded 7 recipes
-[17:49:56] [Server thread/INFO]: Starting minecraft server version 1.19.2
-[17:49:56] [Server thread/INFO]: Loading properties
-[17:49:56] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
-[17:49:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:49:56] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:49:56] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[17:49:57] [Server thread/INFO]: Default game type: SURVIVAL
-[17:49:57] [Server thread/INFO]: Generating keypair
-[17:49:58] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:49:59] [Server thread/INFO]: Using epoll channel type
-[17:50:00] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[17:50:00] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
-[17:50:00] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[17:50:00] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[17:50:00] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[17:50:00] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[17:50:00] [Server thread/INFO]: Preparing level "world"
-[17:50:32] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:50:32] [Server thread/INFO]: Time elapsed: 479 ms
-[17:50:32] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:50:33] [Server thread/INFO]: Time elapsed: 225 ms
-[17:50:33] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:50:33] [Server thread/INFO]: Time elapsed: 244 ms
-[17:50:33] [Server thread/INFO]: Running delayed init tasks
-[17:50:33] [Server thread/INFO]: Done (37.321s)! For help, type "help"
-[17:50:33] [Server thread/INFO]: Timings Reset
+[20:12:10] [ServerMain/INFO]: Building unoptimized datafixer
+[20:12:12] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20:12:14] [ServerMain/INFO]: Loaded 7 recipes
+[20:12:16] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[20:12:16] [Server thread/INFO]: Loading properties
+[20:12:16] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
+[20:12:16] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:12:16] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:12:16] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[20:12:17] [Server thread/INFO]: Default game type: SURVIVAL
+[20:12:17] [Server thread/INFO]: Generating keypair
+[20:12:17] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:12:17] [Server thread/INFO]: Using epoll channel type
+[20:12:17] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[20:12:17] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[20:12:18] [Server thread/ERROR]: Fatal error trying to convert WorldEdit v7.3.9+6959-7adf70b:com/sk89q/worldedit/bukkit/WorldEditPlugin.class
+java.lang.IllegalArgumentException: Unsupported class file major version 65
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:199) ~[asm-9.3.jar:9.3]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:180) ~[asm-9.3.jar:9.3]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:166) ~[asm-9.3.jar:9.3]
+	at org.bukkit.craftbukkit.v1_19_R1.util.Commodore.convert(Commodore.java:171) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.craftbukkit.v1_19_R1.util.CraftMagicNumbers.processClass(CraftMagicNumbers.java:403) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:200) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:129) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:124) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:411) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:319) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.loadPlugins(CraftServer.java:423) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+[20:12:18] [Server thread/ERROR]: Could not load 'plugins/worldedit-bukkit-7.3.9.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:157) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:411) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:319) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.loadPlugins(CraftServer.java:423) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.UnsupportedClassVersionError: com/sk89q/worldedit/bukkit/WorldEditPlugin has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:1017) ~[?:?]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:223) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:592) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:129) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:124) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:467) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:71) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	... 7 more
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loading 4 libraries... please wait
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[20:12:18] [Server thread/INFO]: [MythicMobs] Loaded library /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[20:12:18] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.4.0-SNAPSHOT-738
+[20:12:18] [Server thread/INFO]: [LibsDisguises] Loading LibsDisguises v10.0.44
+[20:12:19] [Server thread/INFO]: [MythicMobs] Loading MythicMobs v5.7.2-${CI_COMMIT_SHORT_SHA}
+[20:12:19] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[20:12:19] [Server thread/INFO]: [MythicMobs] §x§f§3§8§0§1§fM§x§d§4§b§3§0§6y§x§a§5§d§e§0§1t§x§7§1§f§8§1§3h§x§3§f§f§e§3§7i§x§1§8§e§d§6§8c§f §x§0§4§9§a§c§cE§x§1§a§6§5§e§fn§x§4§1§3§5§f§ea§x§7§4§1§2§f§7b§x§a§8§0§1§d§cl§x§d§5§0§7§b§1e§x§f§4§2§1§7§dd§x§f§e§4§c§4§9![0m
+[20:12:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:12:19] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0-SNAPSHOT-738
+[20:12:19] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:12:19] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:12:19] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:12:19] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:12:19] [Server thread/INFO]: Preparing level "world"
+[20:12:20] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:12:20] [Server thread/INFO]: Time elapsed: 279 ms
+[20:12:20] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:12:20] [Server thread/INFO]: Time elapsed: 97 ms
+[20:12:20] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:12:20] [Server thread/INFO]: Time elapsed: 91 ms
+[20:12:20] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v10.0.44
+[20:12:20] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises-10.0.44-Free.jar
+[20:12:20] [Server thread/INFO]: [LibsDisguises] Discovered nms version: (Package: v1_19_R1) (LD: v1_19_R1) (MC: 1.19.2)
+[20:12:20] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1314
+[20:12:20] [Server thread/INFO]: [LibsDisguises] Build Date: 10/04/2024 02:12
+[20:12:20] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
+[20:12:20] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
+[20:12:20] [Server thread/INFO]: [LibsDisguises] Config 'TallSelfDisguises' is set to 'false', LD will hide oversized disguises from self disguise. https://www.spigotmc.org/wiki/lib-s-disguises-faq/#tall-disguises-self-disguises
+[20:12:25] [Server thread/INFO]: [LibsDisguises] Loaded custom disguise libraryaddict
+[20:12:25] [Server thread/INFO]: [LibsDisguises] Loaded 1 custom disguise
+[20:12:25] [Server thread/INFO]: [LibsDisguises] Config is up to date!
+[20:12:25] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.7.2-${CI_COMMIT_SHORT_SHA}
+[20:12:25] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.19.2)...[0m
+[20:12:25] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality[0m
+[20:12:25] [Server thread/WARN]: [MythicMobs] §6--====|||| §c§lMythic §6||||====--[0m[0m
+[20:12:25] [Server thread/WARN]: [MythicMobs] This version of Mythic is not fully compatible with your version of Bukkit.[0m[0m
+[20:12:25] [Server thread/WARN]: [MythicMobs] Some features may be limited or disabled until you use a compatible version.[0m[0m
+[20:12:25] [Server thread/WARN]: [MythicMobs] Server NMS Version Detected - v1_19_R2[0m[0m
+[20:12:25] [Server thread/INFO]: [MythicMobs] Mythic LibsDisguises Support has been enabled![0m
+[20:12:25] [Server thread/INFO]: [MythicMobs] Mythic ProtocolLib Support has been enabled![0m
+[20:12:25] [Server thread/INFO]: [MythicMobs] Base directory /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/plugins/MythicMobs/data
+[20:12:25] [Server thread/INFO]: [MythicMobs] Module directory /workspaces/ESPECIALNAVIDE-O/servidor_minecraft/plugins/MythicMobs/data/worlds
+[20:12:30] [Server thread/INFO]: [MythicMobs] Loading Packs...[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] Loading Items...[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] Loading Item Groups...[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] Loading Skills...[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 5 mobs.[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 5 vanilla mob overrides.[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob stacks.[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 skills.[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 random spawns.[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 3 mythic items.[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 2 drop tables.[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] [32m✓[37m Loaded 0 mob spawners.[0m
+[20:12:31] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.[0m
+[20:12:32] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics[0m
+[20:12:32] [Server thread/INFO]: [MythicMobs] [32m✓ MythicMobs v5.7.2 ( build ${CI_COMMIT_SHORT_SHA} ) has been successfully loaded![0m[0m
+[20:12:32] [Server thread/INFO]: Running delayed init tasks
+[20:12:32] [Server thread/INFO]: Done (16.180s)! For help, type "help"
+[20:12:32] [Server thread/INFO]: Timings Reset
+[20:12:32] [Server thread/ERROR]: [MythicMobs] [31m[SCHEDULER] Exception thrown whilst executing task[37m
+[20:12:32] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.api.volatilecode.handlers.VolatileItemHandler.addNBTData(org.bukkit.inventory.ItemStack, String, io.lumine.mythic.core.utils.jnbt.Tag)" because "io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.handler" is null
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.customData(NbtBukkitItemStack.java:265)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.modelData(NbtBukkitItemStack.java:134)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.modelData(NbtBukkitItemStack.java:34)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.config.ConfigExecutor.lambda$loadConfigSettings$1(ConfigExecutor.java:662)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$RunnableToSupplier.get(Delegates.java:121)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[20:12:32] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftTask.run(CraftTask.java:101)
+[20:12:32] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:483)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1473)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.b(DedicatedServer.java:446)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1397)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.v(MinecraftServer.java:1173)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305)
+[20:12:32] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[20:12:32] [Server thread/ERROR]: [MythicMobs] [31m[SCHEDULER] Exception thrown whilst executing task[37m
+[20:12:32] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.api.volatilecode.handlers.VolatileItemHandler.addNBTData(org.bukkit.inventory.ItemStack, String, io.lumine.mythic.core.utils.jnbt.Tag)" because "io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.handler" is null
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.customData(NbtBukkitItemStack.java:265)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.modelData(NbtBukkitItemStack.java:134)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.modelData(NbtBukkitItemStack.java:34)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.config.ConfigExecutor.lambda$loadConfigSettings$1(ConfigExecutor.java:662)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$RunnableToSupplier.get(Delegates.java:121)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[20:12:32] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[20:12:32] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftTask.run(CraftTask.java:101)
+[20:12:32] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:483)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1473)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.b(DedicatedServer.java:446)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1397)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.v(MinecraftServer.java:1173)
+[20:12:32] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305)
+[20:12:32] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[20:12:34] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.api.volatilecode.handlers.VolatileItemHandler.getNBTData(org.bukkit.inventory.ItemStack)" because "io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.handler" is null
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.editTag(NbtBukkitItemStack.java:50)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.name(NbtBukkitItemStack.java:65)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.name(NbtBukkitItemStack.java:34)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.generateItemStack(MythicItem.java:701)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.generateItemStack(MythicItem.java:646)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.buildItemCache(MythicItem.java:498)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.lambda$loadItem$0(MythicItem.java:450)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.clock.MythicClock.lambda$runPostReload$1(MythicClock.java:144)
+[20:12:34] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.clock.MythicClock.runPostReload(MythicClock.java:141)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.MythicBukkit.lambda$enable$1(MythicBukkit.java:225)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$RunnableToSupplier.get(Delegates.java:121)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[20:12:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftTask.run(CraftTask.java:101)
+[20:12:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:483)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1473)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.b(DedicatedServer.java:446)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1397)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.v(MinecraftServer.java:1173)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305)
+[20:12:34] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[20:12:34] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.api.volatilecode.handlers.VolatileItemHandler.getNBTData(org.bukkit.inventory.ItemStack)" because "io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.handler" is null
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.editTag(NbtBukkitItemStack.java:50)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.name(NbtBukkitItemStack.java:65)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.name(NbtBukkitItemStack.java:34)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.generateItemStack(MythicItem.java:701)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.generateItemStack(MythicItem.java:646)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.buildItemCache(MythicItem.java:498)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.lambda$loadItem$0(MythicItem.java:450)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.clock.MythicClock.lambda$runPostReload$1(MythicClock.java:144)
+[20:12:34] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.clock.MythicClock.runPostReload(MythicClock.java:141)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.MythicBukkit.lambda$enable$1(MythicBukkit.java:225)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$RunnableToSupplier.get(Delegates.java:121)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[20:12:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftTask.run(CraftTask.java:101)
+[20:12:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:483)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1473)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.b(DedicatedServer.java:446)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1397)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.v(MinecraftServer.java:1173)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305)
+[20:12:34] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[20:12:34] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.api.volatilecode.handlers.VolatileItemHandler.getNBTData(org.bukkit.inventory.ItemStack)" because "io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.handler" is null
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.editTag(NbtBukkitItemStack.java:50)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.name(NbtBukkitItemStack.java:65)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.adapters.item.NbtBukkitItemStack.name(NbtBukkitItemStack.java:34)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.generateItemStack(MythicItem.java:701)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.generateItemStack(MythicItem.java:646)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.buildItemCache(MythicItem.java:498)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.items.MythicItem.lambda$loadItem$0(MythicItem.java:450)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.clock.MythicClock.lambda$runPostReload$1(MythicClock.java:144)
+[20:12:34] [Server thread/WARN]: 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.clock.MythicClock.runPostReload(MythicClock.java:141)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.MythicBukkit.lambda$enable$1(MythicBukkit.java:225)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$RunnableToSupplier.get(Delegates.java:121)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$SupplyRunnable.run(LuminePromise.java:654)
+[20:12:34] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[20:12:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftTask.run(CraftTask.java:101)
+[20:12:34] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:483)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1473)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.b(DedicatedServer.java:446)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1397)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.v(MinecraftServer.java:1173)
+[20:12:34] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305)
+[20:12:34] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[20:12:36] [User Authenticator #0/INFO]: UUID of player MauGP is 8794f8df-32b5-3f1f-88db-58309a8da55f
+[20:12:39] [Server thread/INFO]: MauGP joined the game
+[20:12:39] [Server thread/INFO]: MauGP[/127.83.203.255:53809] logged in with entity id 205 at ([world]-71.97302938609447, 139.0, 194.84410139668086)
+[20:12:39] [Server thread/ERROR]: [MythicMobs] [31m[EVENTS] Exception thrown whilst handling event: io.lumine.mythic.bukkit.events.MythicPlayerLoadedEvent[37m
+[20:12:39] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.api.volatilecode.handlers.VolatileEntityHandler.initTeams(io.lumine.mythic.api.adapters.AbstractPlayer)" because the return value of "io.lumine.mythic.api.volatilecode.VolatileCodeHandler.getEntityHandler()" is null
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.glow.GlowManager.lambda$load$0(GlowManager.java:35)
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$ConsumerToBiConsumerSecond.accept(Delegates.java:144)
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.events.functional.single.EventListener.execute(EventListener.java:131)
+[20:12:39] [Server thread/WARN]: 	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80)
+[20:12:39] [Server thread/WARN]: 	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
+[20:12:39] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670)
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Events.call(Events.java:103)
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.players.PlayerManager.initProfile(PlayerManager.java:55)
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.players.PlayerManager.initProfile(PlayerManager.java:29)
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.storage.players.PlayerRepository.lambda$loadProfile$2(PlayerRepository.java:108)
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$ConsumerToFunction.apply(Delegates.java:177)
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$ApplyRunnable.run(LuminePromise.java:684)
+[20:12:39] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[20:12:39] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftTask.run(CraftTask.java:101)
+[20:12:39] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_19_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:483)
+[20:12:39] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1473)
+[20:12:39] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.b(DedicatedServer.java:446)
+[20:12:39] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1397)
+[20:12:39] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.v(MinecraftServer.java:1173)
+[20:12:39] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305)
+[20:12:39] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[20:12:47] [User Authenticator #0/INFO]: UUID of player identidad303XDnt is 3025fd1e-f09d-3450-a2ee-cfb31dd6040e
+[20:12:47] [Server thread/ERROR]: [MythicMobs] [31m[EVENTS] Exception thrown whilst handling event: io.lumine.mythic.bukkit.events.MythicPlayerLoadedEvent[37m
+[20:12:47] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.api.volatilecode.handlers.VolatileEntityHandler.initTeams(io.lumine.mythic.api.adapters.AbstractPlayer)" because the return value of "io.lumine.mythic.api.volatilecode.VolatileCodeHandler.getEntityHandler()" is null
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.glow.GlowManager.lambda$load$0(GlowManager.java:35)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$ConsumerToBiConsumerSecond.accept(Delegates.java:144)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.events.functional.single.EventListener.execute(EventListener.java:131)
+[20:12:47] [Server thread/WARN]: 	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80)
+[20:12:47] [Server thread/WARN]: 	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
+[20:12:47] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Events.call(Events.java:103)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.players.PlayerManager.initProfile(PlayerManager.java:55)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.core.players.PlayerManager.initProfile(PlayerManager.java:29)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.storage.players.PlayerRepository.lambda$loadProfile$2(PlayerRepository.java:108)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$ConsumerToFunction.apply(Delegates.java:177)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise$ApplyRunnable.run(LuminePromise.java:684)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.tasks.LumineExecutors$SchedulerWrappedRunnable.run(LumineExecutors.java:70)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise.executeSync(LuminePromise.java:133)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise.lambda$thenApplySync$1(LuminePromise.java:364)
+[20:12:47] [Server thread/WARN]: 	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+[20:12:47] [Server thread/WARN]: 	at java.base/java.util.concurrent.CompletableFuture.uniWhenCompleteStage(CompletableFuture.java:887)
+[20:12:47] [Server thread/WARN]: 	at java.base/java.util.concurrent.CompletableFuture.whenComplete(CompletableFuture.java:2325)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.LuminePromise.thenApplySync(LuminePromise.java:360)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.promise.Promise.thenAcceptSync(Promise.java:871)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.storage.players.PlayerRepository.loadProfile(PlayerRepository.java:96)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.storage.players.PlayerRepository.loadProfile(PlayerRepository.java:92)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.storage.players.PlayerRepository.lambda$load$0(PlayerRepository.java:54)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.Delegates$ConsumerToBiConsumerSecond.accept(Delegates.java:144)
+[20:12:47] [Server thread/WARN]: 	at MythicMobs-5.7.2.jar//io.lumine.mythic.bukkit.utils.events.functional.single.EventListener.execute(EventListener.java:131)
+[20:12:47] [Server thread/WARN]: 	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80)
+[20:12:47] [Server thread/WARN]: 	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
+[20:12:47] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:670)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.players.PlayerList.postChunkLoadJoin(PlayerList.java:372)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.players.PlayerList.lambda$placeNewPlayer$0(PlayerList.java:309)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.TickTask.run(TickTask.java:18)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.util.thread.IAsyncTaskHandler.d(IAsyncTaskHandler.java:153)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.util.thread.IAsyncTaskHandlerReentrant.d(IAsyncTaskHandlerReentrant.java:24)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.b(MinecraftServer.java:1341)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.util.thread.IAsyncTaskHandler.x(IAsyncTaskHandler.java:126)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.bh(MinecraftServer.java:1318)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.x(MinecraftServer.java:1311)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.util.thread.IAsyncTaskHandler.c(IAsyncTaskHandler.java:136)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.a(MinecraftServer.java:1389)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.v(MinecraftServer.java:1173)
+[20:12:47] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305)
+[20:12:47] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:840)
+[20:12:47] [Server thread/INFO]: identidad303XDnt joined the game
+[20:12:48] [Server thread/INFO]: identidad303XDnt[/127.63.90.252:46151] logged in with entity id 445 at ([world]-72.97035439957853, 139.0, 196.5446925791689)
+[20:13:01] [Server thread/INFO]: MauGP issued server command: /mm egg give MauGP GHAST
+[20:13:01] [Server thread/ERROR]: null
+org.bukkit.command.CommandException: Unhandled exception executing command 'mm' in plugin MythicMobs v5.7.2-${CI_COMMIT_SHORT_SHA}
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.dispatchCommand(CraftServer.java:916) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.craftbukkit.v1_19_R1.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.19.2.jar:git-Paper-307]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:264) ~[paper-1.19.2.jar:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:305) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:289) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2294) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$20(ServerGamePacketListenerImpl.java:2248) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.bukkit.adapters.BukkitItemStack.enchant(org.bukkit.enchantments.Enchantment, int)" because "egg" is null
+	at io.lumine.mythic.core.mobs.MobType.getEgg(MobType.java:1770) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.core.mobs.EggExecutor.createMythicEgg(EggExecutor.java:35) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.bukkit.commands.eggs.GiveCommand.onCommand(GiveCommand.java:67) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.bukkit.utils.commands.Command.onCommand(Command.java:64) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.bukkit.utils.commands.Command.onCommand(Command.java:55) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.bukkit.utils.commands.Command.onCommand(Command.java:55) ~[MythicMobs-5.7.2.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	... 23 more
+[20:13:06] [Server thread/INFO]: MauGP issued server command: /mm egg give MauGP SLIME
+[20:13:06] [Server thread/ERROR]: null
+org.bukkit.command.CommandException: Unhandled exception executing command 'mm' in plugin MythicMobs v5.7.2-${CI_COMMIT_SHORT_SHA}
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:155) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.dispatchCommand(CraftServer.java:916) ~[paper-1.19.2.jar:git-Paper-307]
+	at org.bukkit.craftbukkit.v1_19_R1.command.BukkitCommandWrapper.run(BukkitCommandWrapper.java:64) ~[paper-1.19.2.jar:git-Paper-307]
+	at com.mojang.brigadier.CommandDispatcher.execute(CommandDispatcher.java:264) ~[paper-1.19.2.jar:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:305) ~[?:?]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:289) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performChatCommand(ServerGamePacketListenerImpl.java:2294) ~[?:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$20(ServerGamePacketListenerImpl.java:2248) ~[?:?]
+	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1341) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:185) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1318) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1311) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1289) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1177) ~[paper-1.19.2.jar:git-Paper-307]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
+	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "io.lumine.mythic.bukkit.adapters.BukkitItemStack.enchant(org.bukkit.enchantments.Enchantment, int)" because "egg" is null
+	at io.lumine.mythic.core.mobs.MobType.getEgg(MobType.java:1770) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.core.mobs.EggExecutor.createMythicEgg(EggExecutor.java:35) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.bukkit.commands.eggs.GiveCommand.onCommand(GiveCommand.java:67) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.bukkit.utils.commands.Command.onCommand(Command.java:64) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.bukkit.utils.commands.Command.onCommand(Command.java:55) ~[MythicMobs-5.7.2.jar:?]
+	at io.lumine.mythic.bukkit.utils.commands.Command.onCommand(Command.java:55) ~[MythicMobs-5.7.2.jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
+	... 23 more
+[20:13:34] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:13:35] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:13:37] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:13:38] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:13:47] [Server thread/INFO]: identidad303XDnt has made the advancement [Take Aim]
+[20:13:48] [Server thread/INFO]: identidad303XDnt has completed the challenge [Return to Sender]
+[20:13:48] [Server thread/INFO]: identidad303XDnt has made the advancement [Monster Hunter]
+[20:13:48] [Server thread/INFO]: identidad303XDnt has completed the challenge [Uneasy Alliance]
+[20:13:50] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:13:51] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:13:57] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:13:58] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:13:58] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:13:59] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:14:25] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:26] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:27] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:30] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:31] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:31] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:32] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:55] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:vindicator] minecraft:strength
+[20:14:57] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:58] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:58] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:58] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:59] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:59] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:14:59] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:15:00] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:15:00] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:15:01] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:15:03] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:vindicator] minecraft:strength
+[20:15:03] [Server thread/INFO]: [MauGP: Applied effect Strength to 10 targets]
+[20:15:04] [Server thread/INFO]: identidad303XDnt has made the advancement [Voluntary Exile]
+[20:15:07] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:15:07] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn VINDICATOR
+[20:15:10] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:vindicator] minecraft:strength
+[20:15:10] [Server thread/INFO]: [MauGP: Applied effect Strength to 10 targets]
+[20:15:13] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:vindicator] minecraft:strength 4
+[20:15:34] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:15:35] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:15:35] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:15:38] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:15:39] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:15:39] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:15:51] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:ghast] minecraft:strength 4
+[20:15:51] [Server thread/INFO]: [MauGP: Applied effect Strength to 3 targets]
+[20:16:05] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:ravager] minecraft:strength 4
+[20:16:05] [Server thread/INFO]: [MauGP: Applied effect Strength to 2 targets]
+[20:16:11] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:16:12] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn GHAST
+[20:16:15] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:16:15] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:16:15] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:16:16] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn RAVAGER
+[20:16:19] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:ravager] minecraft:strength 10
+[20:16:19] [Server thread/INFO]: [MauGP: Applied effect Strength to 4 targets]
+[20:16:22] [Server thread/INFO]: identidad303XDnt has reached the goal [Postmortal]
+[20:16:54] [Server thread/INFO]: MauGP issued server command: /mm mobs spawn ZOMBIE 64
+[20:17:05] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:zombie] minecraft:strength 10
+[20:17:05] [Server thread/INFO]: [MauGP: Applied effect Strength to 83 targets]
+[20:17:22] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:zombie] minecraft:speed 10
+[20:17:22] [Server thread/INFO]: [MauGP: Applied effect Speed to 86 targets]
+[20:17:28] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:zombie] minecraft:speed 50
+[20:17:28] [Server thread/INFO]: [MauGP: Applied effect Speed to 88 targets]
+[20:17:32] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:zombie] minecraft:speed 50
+[20:17:32] [Server thread/INFO]: [MauGP: Applied effect Speed to 88 targets]
+[20:17:58] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:zombie] minecraft:strength 100
+[20:17:58] [Server thread/INFO]: [MauGP: Applied effect Strength to 51 targets]
+[20:18:17] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:zombie] minecraft:speed 50
+[20:18:17] [Server thread/INFO]: [MauGP: Applied effect Speed to 61 targets]
+[20:18:18] [Server thread/INFO]: MauGP issued server command: /effect give @e[type= minecraft:zombie] minecraft:strength 100
+[20:18:18] [Server thread/INFO]: [MauGP: Applied effect Strength to 59 targets]
+[20:18:23] [Server thread/INFO]: MauGP issued server command: /tp identidad303XDnt MauGP
+[20:18:23] [Server thread/INFO]: [MauGP: Teleported identidad303XDnt to MauGP]
+[20:18:39] [Async Chat Thread - #0/INFO]: [Not Secure] <identidad303XDnt> gg ez server me duermo nico kabro god
+[20:20:23] [Server thread/INFO]: MauGP issued server command: /give MauGP minecraft:command_block
+[20:20:23] [Server thread/INFO]: [MauGP: Gave 1 [Command Block] to MauGP]
+[20:20:37] [Server thread/INFO]: MauGP issued server command: /summon zombie ~ ~ ~ {Health:51,Attributes:[{Name:"generic.max_health",Base:51f}]}
+[20:20:37] [Server thread/INFO]: [MauGP: Summoned new Zombie]
+[20:20:46] [Server thread/INFO]: MauGP issued server command: /summon zombie ~ ~ ~ {Health:51,Attributes:[{Name:"generic.max_health",Base:51f}]}
+[20:20:46] [Server thread/INFO]: [MauGP: Summoned new Zombie]
+[20:21:00] [Server thread/INFO]: MauGP issued server command: /tp identidad303XDnt MauGP
+[20:21:00] [Server thread/INFO]: [MauGP: Teleported identidad303XDnt to MauGP]
+[20:21:01] [Server thread/INFO]: MauGP issued server command: /summon zombie ~ ~ ~ {Health:51,Attributes:[{Name:"generic.max_health",Base:51f}]}
+[20:21:01] [Server thread/INFO]: [MauGP: Summoned new Zombie]
+[20:21:25] [Server thread/INFO]: MauGP issued server command: /give @p zombie_spawn_egg{EntityTag:{IsBaby:1,Health:51,ActiveEffects:[{Id:5,Duration:-1,Amplifier:100,ShowParticles:0b},{Id:1,Duration:-1,ShowParticles:0b}],Attributes:[{Name:"generic.max_health",Base:51f}]}} 1
+[20:21:25] [Server thread/INFO]: [MauGP: Gave 1 [Zombie Spawn Egg] to MauGP]
+[20:21:33] [Server thread/INFO]: MauGP issued server command: /tp identidad303XDnt MauGP
+[20:21:33] [Server thread/INFO]: [MauGP: Teleported identidad303XDnt to MauGP]
